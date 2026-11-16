@@ -3,10 +3,10 @@ message: "If you use this software, please cite it as below."
 title: "pedkit: pedigree validation, NSGC drawing and risk computation for medical genetics teaching"
 type: software
 authors:
-  - family-names: "AUTHOR_FAMILY_NAME"
-    given-names: "AUTHOR_GIVEN_NAMES"
-    affiliation: "AUTHOR_AFFILIATION"
-    orcid: "https://orcid.org/AUTHOR_ORCID"
+  - family-names: Turan
+    given-names: Muhammed Kamil
+    affiliation: Karabuk University Faculty of Medicine, Department of Medical Biology
+    orcid: https://orcid.org/my-orcid?orcid=0000-0002-1086-9514
 version: 0.1.0
 date-released: 2026-11-15
 license: MIT
