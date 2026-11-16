@@ -1,0 +1,10 @@
+##format=PEDX/0.1
+##family=<ID=FAM02,description="Codominant example: sickle cell (3 = intermediate carrier phenotype)">
+##disease=<ID=D1,name="Sickle cell",mode=unknown,allele_freq=0.05,pattern=solid>
+#family	individual	father	mother	sex	D1	deceased	age	order
+FAM02	I-1	0	0	1	3	0	45	1
+FAM02	I-2	0	0	2	3	0	42	2
+FAM02	II-1	I-1	I-2	1	2	0	20	1
+FAM02	II-2	I-1	I-2	2	3	0	18	2
+FAM02	II-3	I-1	I-2	2	1	0	15	3
+FAM02	II-4	I-1	I-2	1	3	0	12	4

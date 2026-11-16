@@ -1,0 +1,15 @@
+##format=PEDX/0.1
+##family=<ID=FAM01,description="Teaching example: cystic fibrosis and colour blindness in one family">
+##disease=<ID=D1,name="Cystic fibrosis",mode=unknown,allele_freq=0.02,penetrance=1.0,mutation_rate=0,pattern=solid>
+##disease=<ID=D2,name="Red-green colour blindness",mode=XR,allele_freq=0.08,penetrance=1.0,pattern=hatched>
+##union=<p1=II-2,p2=II-3,consanguinity=none,status=married>
+##question=<ID=Q1,type=mode,disease=D1>
+##question=<ID=Q2,type=risk,individual=II-2,disease=D1,event=carrier>
+##question=<ID=Q3,type=risk,individual=III-1,disease=D1,event=affected>
+#family	individual	father	mother	sex	D1	D2	G:D1	G:D2	role	deceased	age	kind	order
+FAM01	I-1	0	0	1	1	1	.	.	.	1	67	birth	1
+FAM01	I-2	0	0	2	1	1	.	.	.	0	64	birth	2
+FAM01	II-1	I-1	I-2	1	2	1	1/1	.	P	0	30	birth	1
+FAM01	II-2	I-1	I-2	2	1	1	.	.	C	0	27	birth	2
+FAM01	II-3	0	0	1	1	2	.	1	.	0	29	birth	3
+FAM01	III-1	II-3	II-2	0	0	0	.	.	.	0	.	planned	1

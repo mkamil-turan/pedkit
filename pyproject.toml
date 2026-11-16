@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pedkit"
+version = "0.1.0"
+description = "Pedigree validation, NSGC drawing, mode-of-inheritance inference, Bayes risk and multifactorial risk for teaching medical genetics"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Kamil Turan" }]
+requires-python = ">=3.10"
+dependencies = []
+keywords = ["pedigree", "genetics", "NSGC", "Bayes risk", "Elston-Stewart",
+            "liability threshold", "medical education", "PLINK"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+
+[project.optional-dependencies]
+inference = ["numpy>=2"]
+mf = ["numpy>=2", "matplotlib>=3.8"]
+qt = ["PyQt5>=5.15"]
+all = ["numpy>=2", "matplotlib>=3.8", "PyQt5>=5.15"]
+test = ["pytest>=7"]
+
+[project.scripts]
+pedkit = "pedkit.cli:main"
+
+[project.gui-scripts]
+pedkit-view = "pedkit.vis.qt:main"
+
+[project.urls]
+Homepage = "https://github.com/mkamil-turan/pedkit"
+Documentation = "https://github.com/mkamil-turan/pedkit/tree/main/docs"
+Issues = "https://github.com/mkamil-turan/pedkit/issues"
+
+[tool.setuptools.packages.find]
+include = ["pedkit*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

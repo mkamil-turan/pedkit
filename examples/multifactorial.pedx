@@ -1,0 +1,14 @@
+##format=PEDX/0.1
+##family=<ID=FAM05,description="Multifactorial example: pyloric stenosis, affected mother (Carter effect)">
+##disease=<ID=D1,name="Infantile hypertrophic pyloric stenosis",mode=MF,prevalence_male=0.005,prevalence_female=0.001,heritability=0.8,pattern=solid>
+##question=<ID=Q1,type=risk,individual=III-2,disease=D1>
+##question=<ID=Q2,type=risk,individual=III-3,disease=D1>
+#family	individual	father	mother	sex	D1	role	kind	order
+FAM05	I-1	0	0	1	1	.	birth	1
+FAM05	I-2	0	0	2	1	.	birth	2
+FAM05	II-1	0	0	1	1	.	birth	1
+FAM05	II-2	I-1	I-2	2	2	P	birth	2
+FAM05	II-3	I-1	I-2	1	1	.	birth	3
+FAM05	III-1	II-1	II-2	2	1	.	birth	1
+FAM05	III-2	II-1	II-2	1	0	C	pregnancy	2
+FAM05	III-3	II-1	II-2	2	0	.	pregnancy	3

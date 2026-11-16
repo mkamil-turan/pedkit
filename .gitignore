@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.venv/
+venv/
+
+# Copyrighted reference PDFs: never commit
+references/
+
+# Local scratch files
+test1.py
+aile01.pdf
+grafikler/
+plots/
+
+# Editors and OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
